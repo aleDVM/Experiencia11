@@ -1,5 +1,5 @@
 =begin
-Generar el código para imprimir la siguiente tabla:
+Generar el codigo para imprimir la siguiente tabla:
 
  <table>
  <tbody>
@@ -24,3 +24,25 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+a = 3
+b = ''
+c = ''
+d = 4
+e = 4
+g = 0
+
+
+
+a.times do
+
+  d.times do |i|
+    i += 1
+    c += "\n\t\t\t<td>#{i}</td>\n"
+end
+
+  b += "\t\t<tr>#{c}\t\t</tr>\n\n"
+
+end
+print "<table>\n\t<tbody>\n#{b}\t</tbody\n</table"
+puts
