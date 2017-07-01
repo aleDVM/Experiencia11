@@ -1,5 +1,5 @@
 =begin
- Generar el código para imprimir la siguiente tabla:
+ Generar el codigo para imprimir la siguiente tabla:
 <table>
  	<tbody>
   		<tr>
@@ -11,3 +11,11 @@
 </table>
 
 =end
+a = 3
+b = ''
+a.times do |i|
+  b += "\t\t\t<td>#{i+1}</td>\n"
+end
+
+print "<table>\n\t<tbody>\n\t\t<tr>\n#{b}\t\t</tr>\n\t</tbody\n</table"
+puts
